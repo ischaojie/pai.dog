@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import paiUrl from "./assets/pai.png";
+import paiUrl from "./assets/pai.webp";
 import "./App.css";
 
 function App() {
