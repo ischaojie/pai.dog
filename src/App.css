@@ -1,22 +1,30 @@
+.pi {
+  width: calc(100vw / 3);
+}
+
 .heart {
-    cursor: pointer;
-    height: 80px;
-    width: 80px;
-    background-image:url( './assets/heart.png');
+  cursor: pointer;
+  height: 120px;
+  width: 120px;
+  background-image: url("./assets/heart.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 2900%;
+}
+
+.heart:hover {
+  background-position: right;
+}
+
+.is_animating {
+  animation: heart-burst 0.8s steps(28) 1;
+}
+
+@keyframes heart-burst {
+  from {
     background-position: left;
-    background-repeat:no-repeat;
-    background-size:2900%;
   }
-
-  .heart:hover {
-    background-position:right;
+  to {
+    background-position: right;
   }
-
-  .is_animating {
-    animation: heart-burst .8s steps(28) 1;
-  }
-
-  @keyframes heart-burst {
-    from {background-position:left;}
-    to { background-position:right;}
-  }
+}
