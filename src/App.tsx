@@ -61,7 +61,7 @@ function App() {
           .
         </p>
       </div>
-      <img src={paiUrl} className="pi self-end justify-self-end" />
+      <img src={paiUrl} className="pi self-end justify-self-end" alt="dog pi"/>
     </div>
   );
 }
