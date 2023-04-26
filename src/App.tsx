@@ -38,7 +38,8 @@ function App() {
       >
         {count}
       </div>
-      <div className="self-center flex flex-col text-justify text-lg font-mono subpixel-antialiased tracking-wide leading-loose">
+      <div className="mx-8 self-center flex flex-col text-justify text-lg font-mono
+      subpixel-antialiased tracking-wide leading-loose">
         <p>
           <span className="text-2xl text-red-600">Hello</span>, I am a 🐶
           named&nbsp;
