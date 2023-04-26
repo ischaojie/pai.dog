@@ -30,14 +30,7 @@ function App() {
 
   return (
     <div className="app bg-slate-50 min-h-screen grid md:grid-cols-3 sm:grid-cols-1">
-      <div
-        className={`heart self-center justify-self-center flex flex-col-reverse items-center
-            ${isAnimating ? "is_animating" : ""}`}
-        onClick={iLikeIt}
-        onAnimationEnd={() => setIsAnimating(false)}
-      >
-        {count}
-      </div>
+
       <div className="mx-8 self-center flex flex-col text-justify text-lg font-mono
       subpixel-antialiased tracking-wide leading-loose">
         <p>
@@ -62,7 +55,15 @@ function App() {
           .
         </p>
       </div>
-      <img src={paiUrl} className="pi self-end justify-self-end" alt="dog pi"/>
+      <div
+        className={`heart self-center justify-self-center flex flex-col-reverse items-center
+            ${isAnimating ? "is_animating" : ""}`}
+        onClick={iLikeIt}
+        onAnimationEnd={() => setIsAnimating(false)}
+      >
+        {count}
+      </div>
+      <img src={paiUrl} className="pi self-end justify-self-end w-full" alt="dog pi"/>
     </div>
   );
 }
